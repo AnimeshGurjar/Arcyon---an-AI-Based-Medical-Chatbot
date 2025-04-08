@@ -1,16 +1,34 @@
-# arcyon_healthbot
+# AI-Based Medical Chatbot
 
-A new Flutter application.
+This project builds an intelligent medical chatbot that predicts possible diseases based on user-input symptoms using machine learning. The chatbot aims to offer a first-level diagnostic experience and assist users in identifying conditions based on their descriptions.
 
-## Getting Started
+## 💡 Motivation
+The goal is to reduce the burden on healthcare professionals by offering an accessible and interactive tool that uses machine learning to simulate basic diagnostic reasoning.
 
-This project is a starting point for a Flutter application.
+## 🧠 Core Features
+- **Symptom-to-Disease Prediction**: Users enter symptoms, and the chatbot returns the most probable diseases.
+- **Model Evaluation and Selection**: Multiple ML models were trained and evaluated to determine the best-performing algorithm for this classification task.
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Technologies Used
+- **Languages**: Python
+- **Libraries**: scikit-learn, pandas, numpy, matplotlib
+- **Interface**: Streamlit
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## 📊 Machine Learning Models
+- Multinomial Naive Bayes
+- Random Forest Classifier
+- Stochastic Gradient Descent (SGD) Classifier
+- Multi-layer Perceptron (Neural Networks)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Performance of each model was compared using accuracy and class probability thresholds to ensure consistent disease prediction.
+
+## 🖥️ Deployment
+A **Streamlit-based web interface** was created to make the chatbot interactive and user-friendly.
+
+## 🔍 Dataset
+The dataset includes 132 symptoms and 41 diseases. Data preprocessing included:
+- One-hot encoding of symptoms
+- Grouping similar symptoms
+- Splitting into training and testing sets
+
+> Note: Due to dataset licensing, raw data is not included in this repository.
